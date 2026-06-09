@@ -1,0 +1,14 @@
+# Run the test suite on every push so the default branch stays green.
+stages:
+  - test
+
+pytest:
+  stage: test
+  image: python:3.12-slim
+  before_script:
+    - python -m pip install --quiet --upgrade pip
+    - pip install --quiet -e ".[dev]"
+  script:
+    - pytest -q
+  rules:
+    - if: $CI_COMMIT_BRANCH
