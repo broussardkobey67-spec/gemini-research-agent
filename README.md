@@ -134,6 +134,14 @@ tests/
 - **Cheap by default.** `gemini-2.0-flash` handles planning and synthesis well;
   the model is called twice per question regardless of how many pages are read.
 
+## Public Proof Context
+
+Built by Kobey Dev Services as a compact AI research-agent proof.
+
+- Portfolio: https://kobeydev.com
+- GitHub org: https://github.com/git-agent-swarm
+- Google Developer profile: https://me.developers.google.com/u/116492041557080639666
+
 ## License
 
 MIT © Kobey Broussard
